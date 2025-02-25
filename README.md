@@ -14,7 +14,7 @@ It's only been tested on Fedora 41, Gnome 47, and Firefox 135.0. I mostly upload
 For the life of me I cannot figure out why this happens. If you have the script launch a browser profile that does not already have an instance running, it will crash on close. Things tried:
 1. Launching Firefox as normal
 2. Launching Firefox with `setsid ... > /dev/null 2>&1 &`
-3. Launching Firefox with `nohub ... > /dev/null 2>&1 &`
+3. Launching Firefox with `nohup ... > /dev/null 2>&1 &`
 4. Same as #3, but adding a `sleep 5` to slow down the script termination just in case
 5. Same as #3, but running `disown` after
 6. Give up and disable the Firefox crash reporter...this just generated an OS crash report
