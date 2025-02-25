@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.1
+Name=Firefox Profile Selector
+Exec=/usr/bin/env bash -c "$HOME/.local/bin/firefox-profile-selector.sh %u"
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+StartupNotify=false
+NoDisplay=true
+MimeType=x-scheme-handler/http;x-scheme-handler/https;
+
